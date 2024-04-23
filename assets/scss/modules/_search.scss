@@ -31,6 +31,10 @@
         width: 100%;
     }
 
+    &__input::placeholder {
+        color: lighten($top-search-box-text-color, 26%);
+    }
+
     &__button {
         background: none;
         border: none;
