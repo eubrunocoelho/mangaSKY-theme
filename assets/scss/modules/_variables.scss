@@ -18,3 +18,16 @@ $search-box-radius: 8px 4px 8px 4px;
 
 /*===== FONTS =====*/
 $font-roboto: 'Roboto', sans-serif;
+
+/*===== MIXINS - MEDIA QUERIES =====*/
+@mixin responsive-mobile {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin responsive-tablet {
+    @media screen and (min-width: 920px) {
+        @content;
+    }
+}
