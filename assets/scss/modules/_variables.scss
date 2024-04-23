@@ -10,16 +10,23 @@ $division-line-color: #ced8dc;
 $header-background-color: #fff;
 $header-border-color: linear-gradient(to bottom, #3da7e3 0%, #3da7e3 16%, #3da7e3 18%, #8bcdef 20%, #8bcdef 32%, #8bcdef 34%, #1d9bf0 36%, #1d9bf0 80%, #1d9bf0 82%, #1287d5 84%, #1287d5 100%);
 $header-button-color: #f3f3f3;
+$header-menu-active-item-color: #42a9ef;
+$header-menu-active-top-item-color: #188cda;
+$top-search-border-color: #188cda;
 $top-search-box-color: #fff;
 $top-search-box-border-color: #f1f1f1;
 $top-search-box-text-color: #788184;
 
 /*===== COLORS =====*/
+$white-color: #fff;
 $blue-primary-color: #1d9bf0;
+$gray-primary-color: #788084;
 
 /*===== STRUCTURE =====*/
 $search-box-radius: 8px 4px 8px 4px;
 $header-button-radius: 8px 4px 8px 4px;
+$header-menu-active-radius: 0 0 4px 4px;
 
 /*===== FONTS =====*/
 $font-roboto: 'Roboto', sans-serif;
+$font-rajdhani: 'Rajdhani', sans-serif;
