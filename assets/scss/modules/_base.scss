@@ -1,0 +1,25 @@
+/**
+ * =================================================================================
+ * BASE
+ * =================================================================================
+ */
+
+*,
+*::before,
+*::after {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background: $background-color;
+    display: flex;
+    font-family: $font-roboto;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+form {
+    width: 100%;
+}
