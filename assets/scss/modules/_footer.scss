@@ -17,17 +17,27 @@
         flex-direction: column;
         width: 100%;
     }
+
+    &__top {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        width: 100%;
+    }
 }
 
 .socials {
     &__list {
         display: flex;
-        gap: 10px
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
     }
 
     &__list-item {
         align-items: center;
-        border-radius: $socials-box-radius;
+        border-radius: $footer-button-radius;
         display: flex;
         height: 40px;
         justify-content: center;
