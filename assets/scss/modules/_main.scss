@@ -5,6 +5,8 @@
  */
 
 .main {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto 54px;
     width: 100%;
 }
