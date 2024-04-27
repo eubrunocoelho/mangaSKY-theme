@@ -34,9 +34,28 @@
     }
 
     &__item {
-        background: #cecece;
-        height: 208px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         width: 140px;
+    }
+
+    &__cover {
+        align-items: center;
+        background: $white-color;
+        border: 1px solid $single-line-color;
+        border-radius: $hightlisghts-cover-box-radius;
+        display: flex;
+        height: 208px;
+        justify-content: center;
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
+
+    &__img {
+        border-radius: 3px 6px 6px 3px;
+        height: 198px;
+        width: calc(100% - 8px);
     }
 }
 
