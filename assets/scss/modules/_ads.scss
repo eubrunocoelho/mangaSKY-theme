@@ -1,0 +1,16 @@
+.ads {
+    align-items: center;
+    background: $gray-secondary-color;
+    display: flex;
+    height: 85px;
+    justify-content: center;
+    width: 100%;
+
+    span {
+        color: $gray-primary-color;
+        font-family: $font-pt-sans-narrow;
+        font-size: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
