@@ -21,3 +21,19 @@
         text-transform: uppercase;
     }
 }
+
+@media screen and (min-width: 480px) {
+    .ads {
+        span {
+            font-size: 28px;
+        }
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .ads {
+        span {
+            font-size: 32px;
+        }
+    }
+}
