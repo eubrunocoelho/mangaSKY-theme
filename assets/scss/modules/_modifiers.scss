@@ -21,3 +21,11 @@
         background: $contact-background-color;
     }
 }
+
+.copy {
+    &__link {
+        &--author {
+            color: $black-primary-color;
+        }
+    }
+}

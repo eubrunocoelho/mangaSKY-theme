@@ -33,3 +33,12 @@ button {
     cursor: pointer;
     outline: none;
 }
+
+a {
+    color: $blue-primary-color;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
