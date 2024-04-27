@@ -1,0 +1,31 @@
+/**
+ * =================================================================================
+ * HIGHLIGHTS
+ * =================================================================================
+ */
+
+.highlights {
+    background: $section-background-color;
+    border-top: 4px solid $section-border-color;
+    border-radius: $section-box-radius;
+    padding: 60px 0 30px 0;
+    position: relative;
+
+    &__title {
+        align-items: center;
+        background: $section-title-box-color;
+        border-radius: $section-title-box-radius;
+        color: $white-color;
+        display: flex;
+        font-family: $font-pt-sans-narrow;
+        font-size: 23px;
+        font-weight: 700;
+        height: 40px;
+        left: 0;
+        padding: 0 20px 0 20px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 0;
+        width: max-content;
+    }
+}
