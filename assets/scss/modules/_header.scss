@@ -118,14 +118,8 @@
     }
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 690px) {
     .header {
-        .container {
-            padding: 0 30px 0 30px;
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-
         &__menu {
             display: flex;
             font-family: $font-rajdhani;
@@ -181,6 +175,16 @@
     .button {
         &__toggle-box {
             display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .header {
+        .container {
+            padding: 0 30px 0 30px;
+            margin: 0 auto;
+            max-width: 1200px;
         }
     }
 }
