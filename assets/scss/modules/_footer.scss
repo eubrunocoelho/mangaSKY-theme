@@ -1,0 +1,51 @@
+/**
+ * =================================================================================
+ * FOOTER
+ * =================================================================================
+ */
+
+.footer {
+    margin-top: auto;
+    width: 100%;
+
+    .container {
+        align-items: center;
+        background: $white-color;
+        border-radius: $footer-box-radius;
+        border-top: 4px solid $footer-border-color;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.socials {
+    &__list {
+        display: flex;
+        gap: 10px
+    }
+
+    &__list-item {
+        align-items: center;
+        border-radius: $socials-box-radius;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        width: 40px;
+    }
+
+    &__list-link {
+        color: $white-color;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .footer {
+        padding: 0 10px 0 10px;
+
+        .container {
+            padding: 26px 10px 20px 10px;
+        }
+    }
+}

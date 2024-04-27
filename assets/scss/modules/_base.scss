@@ -12,6 +12,10 @@
     text-rendering: optimizeLegibility;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background: $background-color;
     display: flex;

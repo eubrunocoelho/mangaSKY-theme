@@ -1,0 +1,23 @@
+/**
+ * =================================================================================
+ * MODIFIERS
+ * =================================================================================
+ */
+
+.socials {
+    &--facebook {
+        background: $facebook-background-color;
+    }
+
+    &--twitter-x {
+        background: $twitter-x-background-color;
+    }
+
+    &--discord {
+        background: $discord-background-color;
+    }
+
+    &--contact {
+        background: $contact-background-color;
+    }
+}
