@@ -18,10 +18,9 @@
     }
 
     &__top {
-        align-items: center;
         border-bottom: 1px solid $single-line-color;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         padding: 26px 0 20px 0;
         row-gap: 12px;
         width: 100%;
@@ -75,6 +74,24 @@
 
         .container {
             padding: 0 10px 0 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .footer {
+        padding: 0 20px 0 20px;
+
+        .container {
+            padding: 0 14px 0 14px;
+        }
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .footer {
+        &__top {
+            justify-content: start;
         }
     }
 }
