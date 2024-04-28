@@ -1,0 +1,121 @@
+/**
+ * =================================================================================
+ * MANGAS
+ * =================================================================================
+ */
+
+.mangas {
+    background: $white-color-1;
+    border-top: 4px solid $blue-color-1;
+    border-radius: $border-radius-3;
+    margin: 0 0 42px 0;
+    padding: 60px 10px 30px 10px;
+    position: relative;
+    width: 100%;
+
+    &__summary {
+        display: flex;
+        width: 100%;
+    }
+
+    &__cover {
+        align-items: center;
+        background: $white-color-1;
+        border: 1px solid $gray-color-1;
+        border-radius: $border-radius-4;
+        display: flex;
+        height: 166px;
+        justify-content: center;
+        margin: 0 8px 0 0;
+        min-height: 166px;
+        width: 102px;
+    }
+
+    &__link {
+        align-items: center;
+        background: $gray-color-3;
+        border-radius: $border-radius-7;
+        display: flex;
+        height: 156px;
+        justify-content: center;
+        width: calc(100% - 8px);
+    }
+
+    &__img {
+        border-radius: $border-radius-7;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__recents {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 7px 0 0 0;
+        width: 100%;
+    }
+}
+
+.recents {
+    &__title {
+        color: $black-color-2;
+        font-family: $pt-sans-narrow;
+        font-size: 23px;
+        font-weight: 700;
+        margin: 0 0 8px 0;
+    }
+
+    &__time,
+    &__scan {
+        align-items: center;
+        color: $gray-color-4;
+        display: flex;
+        font-family: $roboto-condensed;
+        font-size: 14px;
+        font-weight: 500;
+        height: 18px;
+    }
+
+    &__icon {
+        align-items: center;
+        display: flex;
+        color: $blue-color-1;
+        font-size: 14px;
+        height: 18px;
+        justify-content: center;
+        margin: 0 2px 0 0;
+        width: 18px;
+    }
+}
+
+.chapters {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 0 0 8px 0;
+        width: 100%;
+    }
+
+    &__list-item {
+        align-items: center;
+        background: $white-color-1;
+        border: 1px solid $gray-color-1;
+        border-radius: $border-radius-3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 6px 13px 6px 13px;
+    }
+
+    &__list-link {
+        color: $black-color-2;
+        font-family: $pt-sans-narrow;
+        font-size: 20px;
+        font-weight: 700;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
