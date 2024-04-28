@@ -7,4 +7,22 @@
 .section {
     margin: 20px 0 42px 0;
     width: 100%;
+
+    &__title {
+        align-items: center;
+        background: $blue-color-1;
+        border-radius: $border-radius-5;
+        color: $white-color-1;
+        display: flex;
+        font-family: $pt-sans-narrow;
+        font-size: 23px;
+        font-weight: 700;
+        height: 40px;
+        left: 0;
+        padding: 0 20px 0 20px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 0;
+        width: max-content;
+    }
 }

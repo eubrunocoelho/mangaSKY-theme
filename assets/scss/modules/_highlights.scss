@@ -11,24 +11,6 @@
     margin: 0 0 42px 0;
     position: relative;
 
-    &__title {
-        align-items: center;
-        background: $blue-color-1;
-        border-radius: $border-radius-5;
-        color: $white-color-1;
-        display: flex;
-        font-family: $pt-sans-narrow;
-        font-size: 23px;
-        font-weight: 700;
-        height: 40px;
-        left: 0;
-        padding: 0 20px 0 20px;
-        position: absolute;
-        text-transform: uppercase;
-        top: 0;
-        width: max-content;
-    }
-
     &__carousel {
         height: 100%;
         width: 100%;
@@ -53,10 +35,57 @@
         width: 100%;
     }
 
+    &__link {
+        align-items: center;
+        background: $gray-color-3;
+        border-radius: $border-radius-7;
+        display: flex;
+        height: 198px;
+        justify-content: center;
+        width: calc(100% - 8px);
+    }
+
     &__img {
         border-radius: $border-radius-7;
-        height: 198px;
-        width: calc(100% - 8px);
+        height: 100%;
+        width: 100%;
+    }
+
+    &__chapter {
+        background: $black-opacity-color;
+        border-radius: $border-radius-8;
+        color: $white-color-1;
+        font-family: $pt-sans-narrow;
+        font-size: 21px;
+        font-weight: 700;
+        padding: 8px 11px 8px 11px;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__title {
+        align-items: center;
+        background: $white-color-4;
+        border-radius: $border-radius-1;
+        display: flex;
+        justify-content: center;
+        padding: 14px 5px 14px 5px;
+        text-align: center;
+        width: 100%;
+        word-break: break-word;
+
+        a {
+            color: $black-color-2;
+            font-family: $pt-sans-narrow;
+            font-size: 19px;
+            font-weight: 700;
+            text-decoration: none;
+        }
     }
 }
 
