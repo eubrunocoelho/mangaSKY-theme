@@ -9,6 +9,7 @@
     border-top: 4px solid $blue-color-1;
     border-radius: $border-radius-3;
     margin: 0 0 42px 0;
+    padding: 60px 10px 30px 10px;
     position: relative;
 
     &__carousel {
@@ -86,11 +87,5 @@
             font-weight: 700;
             text-decoration: none;
         }
-    }
-}
-
-@media screen and (min-width: 320px) {
-    .highlights {
-        padding: 60px 10px 30px 10px;
     }
 }

@@ -26,6 +26,7 @@
         align-items: center;
         display: flex;
         height: 100%;
+        padding: 0 10px 0 10px;
         width: 100%;
     }
 
@@ -93,15 +94,6 @@
         width: 20px;
     }
 }
-
-@media screen and (min-width: 320px) {
-    .header {
-        .container {
-            padding: 0 10px 0 10px;
-        }
-    }
-}
-
 
 @media screen and (min-width: 480px) {
     .header {

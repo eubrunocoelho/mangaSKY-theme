@@ -6,6 +6,7 @@
 
 .footer {
     margin-top: auto;
+    padding: 0 10px 0 10px;
     width: 100%;
 
     .container {
@@ -14,6 +15,7 @@
         border-top: 4px solid $blue-color-1;
         display: flex;
         flex-direction: column;
+        padding: 0 10px 0 10px;
         width: 100%;
     }
 
@@ -65,16 +67,6 @@
 .copy {
     &__link {
         font-weight: 700;
-    }
-}
-
-@media screen and (min-width: 320px) {
-    .footer {
-        padding: 0 10px 0 10px;
-
-        .container {
-            padding: 0 10px 0 10px;
-        }
     }
 }
 

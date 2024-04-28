@@ -8,13 +8,8 @@
     display: flex;
     flex-direction: column;
     margin: 7px auto 54px;
+    padding: 0 10px 0 10px;
     width: 100%;
-}
-
-@media screen and (min-width:320px) {
-    .main {
-        padding: 0 10px 0 10px;
-    }
 }
 
 @media screen and (min-width: 480px) {
