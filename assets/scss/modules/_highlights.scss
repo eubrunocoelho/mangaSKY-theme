@@ -5,18 +5,19 @@
  */
 
 .highlights {
-    background: $section-background-color;
-    border-top: 4px solid $section-border-color;
-    border-radius: $section-box-radius;
+    background: $white-color-1;
+    border-top: 4px solid $blue-color-1;
+    border-radius: $border-radius-3;
+    margin: 0 0 42px 0;
     position: relative;
 
     &__title {
         align-items: center;
-        background: $section-title-box-color;
-        border-radius: $section-title-box-radius;
-        color: $white-color;
+        background: $blue-color-1;
+        border-radius: $border-radius-5;
+        color: $white-color-1;
         display: flex;
-        font-family: $font-pt-sans-narrow;
+        font-family: $pt-sans-narrow;
         font-size: 23px;
         font-weight: 700;
         height: 40px;
@@ -42,9 +43,9 @@
 
     &__cover {
         align-items: center;
-        background: $white-color;
-        border: 1px solid $single-line-color;
-        border-radius: $hightlisghts-cover-box-radius;
+        background: $white-color-1;
+        border: 1px solid $gray-color-1;
+        border-radius: $border-radius-4;
         display: flex;
         height: 208px;
         justify-content: center;
@@ -53,7 +54,7 @@
     }
 
     &__img {
-        border-radius: 3px 6px 6px 3px;
+        border-radius: $border-radius-7;
         height: 198px;
         width: calc(100% - 8px);
     }

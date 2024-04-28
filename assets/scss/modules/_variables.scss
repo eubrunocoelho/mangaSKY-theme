@@ -4,54 +4,34 @@
  * =================================================================================
  */
 
-/*===== ELEMENTS COLOR - DEFAULT =====*/
-$background-color: #f6f6f6;
-$single-line-color: #ced8dc;
-/*===== ELEMENTS COLOR - TOP SEARCH =====*/
-$top-search-border-color: #188cda;
-$top-search-box-border-color: #f1f1f1;
-$top-search-box-color: #fff;
-$top-search-box-text-color: #788184;
-/*===== ELEMENTS COLOR - HEADER =====*/
-$header-background-color: #fff;
-$header-border-color: linear-gradient(to bottom, #3da7e3 0%, #3da7e3 16%, #3da7e3 18%, #8bcdef 20%, #8bcdef 32%, #8bcdef 34%, #1d9bf0 36%, #1d9bf0 80%, #1d9bf0 82%, #1287d5 84%, #1287d5 100%);
-$header-button-color: #f3f3f3;
-$header-menu-active-item-color: #42a9ef;
-$header-menu-active-top-item-color: #188cda;
-/*===== ELEMENTS COLOR - SECTION'S =====*/
-$section-background-color: #fff;
-$section-border-color: #1d9bf0;
-$section-title-box-color: #1d9bf0;
-/*===== ELEMENTS COLOR - FOOTER =====*/
-$footer-border-color: #1d9bf0;
-/*===== ELEMENTS COLOR - BOX'S =====*/
-$contact-box-color: #1d9bf0;
-$discord-box-color: #5966f2;
-$facebook-box-color: #0866ff;
-$twitter-x-box-color: #000;
-
 /*===== COLORS =====*/
-$black-primary-color: #242628;
-$blue-primary-color: #1d9bf0;
-$gray-primary-color: #788084;
-$gray-secondary-color: #e5e5e5;
-$white-color: #fff;
+$background-color: #f6f6f6;
+$black-color-1: #000;
+$black-color-2: #242628;
+$blue-gradient-color: linear-gradient(to bottom, #3da7e3 0%, #3da7e3 16%, #3da7e3 18%, #8bcdef 20%, #8bcdef 32%, #8bcdef 34%, #1d9bf0 36%, #1d9bf0 80%, #1d9bf0 82%, #1287d5 84%, #1287d5 100%);
+$blue-color-1: #1d9bf0;
+$blue-color-2: #188cda;
+$blue-color-3: #42a9ef;
+$brands-discord-color: #5966f2;
+$brands-facebook-color: #0866ff;
+$brands-twitter-x-color: #000;
+$gray-color-1: #ebebeb;
+$gray-color-2: #e5e5e5;
+$gray-color-3: #788184;
+$white-color-1: #fff;
+$white-color-2: #f1f1f1;
+$white-color-3: #f3f3f3;
 
-/*===== STRUCTURE - TOP SEARCH =====*/
-$search-box-radius: 8px 4px 8px 4px;
-/*===== STRUCTURE - HEADER =====*/
-$header-button-radius: 8px 4px 8px 4px;
-$header-menu-active-radius: 0 0 4px 4px;
-/*===== STRUCTURE - SECTION =====*/
-$section-box-radius: 4px 8px 8px 8px;
-$section-title-box-radius: 0 0 4px 0; 
-/*===== STRUCTURE - HIGHLIGHTS =====*/
-$hightlisghts-cover-box-radius: 4px 8px 8px 4px;
-/*===== STRUCTURE - FOOTER =====*/
-$footer-box-radius: 8px 8px 0 0;
-$footer-button-radius: 8px 4px 8px 4px;
+/*===== STRUCTURE =====*/
+$border-radius-1: 8px 4px 8px 4px;
+$border-radius-2: 0 0 4px 4px;
+$border-radius-3: 4px 8px 8px 8px;
+$border-radius-4: 4px 8px 8px 4px;
+$border-radius-5: 0 0 4px 0;
+$border-radius-6: 8px 8px 0 0;
+$border-radius-7: 3px 6px 6px 3px;
 
 /*===== FONTS =====*/
-$font-rajdhani: 'Rajdhani', sans-serif;
-$font-roboto: 'Roboto', sans-serif;
-$font-pt-sans-narrow: 'PT Sans Narrow', sans-serif;
+$rajdhani: 'Rajdhani', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$pt-sans-narrow: 'PT Sans Narrow', sans-serif;

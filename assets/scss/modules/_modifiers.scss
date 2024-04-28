@@ -6,26 +6,26 @@
 
 .socials {
     &--facebook {
-        background: $facebook-box-color;
+        background: $brands-facebook-color;
     }
 
     &--twitter-x {
-        background: $twitter-x-box-color;
+        background: $brands-twitter-x-color;
     }
 
     &--discord {
-        background: $discord-box-color;
+        background: $brands-discord-color;
     }
 
     &--contact {
-        background: $contact-box-color;
+        background: $blue-color-1;
     }
 }
 
 .copy {
     &__link {
         &--author {
-            color: $black-primary-color;
+            color: $black-color-2;
         }
     }
 }

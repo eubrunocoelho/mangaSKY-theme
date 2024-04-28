@@ -19,7 +19,7 @@ html {
 body {
     background: $background-color;
     display: flex;
-    font-family: $font-roboto;
+    font-family: $roboto;
     flex-direction: column;
     min-height: 100%;
 }
@@ -35,7 +35,7 @@ button {
 }
 
 a {
-    color: $blue-primary-color;
+    color: $blue-color-1;
     text-decoration: none;
 }
 
