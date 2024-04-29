@@ -25,8 +25,31 @@
     &__ellipse {
         background: none;
         border: 2px solid $blue-color-1;
-        border-radius: $border-radius-9;
+        border-radius: $border-ellipse;
         height: 10px;
         width: 10px;
     }
+}
+
+.type {
+    border: 1px solid $gray-color-1;
+    border-radius: $border-radius-9;
+    color: $blue-color-1;
+    font-family: $pt-sans-narrow;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 7px 11px 7px 11px;
+    text-transform: uppercase;
+}
+
+.status {
+    background: $yellow-color-1;
+    border-radius: $border-radius-10;
+    color: $white-color-1;
+    font-family: $pt-sans-narrow;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 9px 11px 9px 11px;
+    text-transform: uppercase;
+    width: max-content;
 }
