@@ -1,0 +1,45 @@
+/**
+ * =================================================================================
+ * CONTENT
+ * =================================================================================
+ */
+
+.content {
+    background: $white-color-1;
+    border-top: 4px solid $blue-color-1;
+    border-radius: $border-radius-3;
+    margin: 0 0 42px 0;
+    padding: 60px 10px 30px 10px;
+    position: relative;
+    width: 100%;
+
+    &__title {
+        align-items: center;
+        background: $blue-color-1;
+        border-radius: $border-radius-5;
+        color: $white-color-1;
+        display: flex;
+        font-family: $pt-sans-narrow;
+        font-size: 23px;
+        font-weight: 700;
+        height: 40px;
+        left: 0;
+        padding: 0 20px 0 20px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 0;
+        width: max-content;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .content {
+        padding: 60px 14px 30px 14px;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .content {
+        padding: 60px 24px 30px 24px;
+    }
+}

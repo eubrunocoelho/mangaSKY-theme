@@ -5,14 +5,6 @@
  */
 
 .mangas {
-    background: $white-color-1;
-    border-top: 4px solid $blue-color-1;
-    border-radius: $border-radius-3;
-    margin: 0 0 42px 0;
-    padding: 60px 10px 30px 10px;
-    position: relative;
-    width: 100%;
-
     &__summary {
         border-bottom: 1px solid $gray-color-1;
         display: flex;
@@ -34,7 +26,7 @@
         height: 166px;
         justify-content: center;
         margin: 0 8px 0 0;
-        width: 102px;
+        width: 106px;
     }
 
     &__link {
@@ -128,8 +120,6 @@
 
 @media screen and (min-width: 480px) {
     .mangas {
-        padding: 60px 14px 30px 14px;
-
         &__cover {
             height: 186px;
             width: 122px;
@@ -169,11 +159,5 @@
         &__link {
             height: 184px;
         }
-    }
-}
-
-@media screen and (min-width: 920px) {
-    .mangas {
-        padding: 60px 24px 30px 24px;
     }
 }

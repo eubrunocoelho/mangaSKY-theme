@@ -5,13 +5,6 @@
  */
 
 .highlights {
-    background: $white-color-1;
-    border-top: 4px solid $blue-color-1;
-    border-radius: $border-radius-3;
-    margin: 0 0 42px 0;
-    padding: 60px 10px 30px 10px;
-    position: relative;
-
     &__carousel {
         height: 100%;
         width: 100%;
@@ -88,17 +81,5 @@
             text-decoration: none;
             text-transform: capitalize;
         }
-    }
-}
-
-@media screen and (min-width: 480px) {
-    .highlights {
-        padding: 60px 14px 30px 14px;
-    }
-}
-
-@media screen and (min-width: 920px) {
-    .highlights {
-        padding: 60px 24px 30px 24px;
     }
 }
