@@ -19,7 +19,8 @@
         padding: 20px 0 20px 0;
         width: 100%;
 
-        &:only-child {
+        &:only-child,
+        &:first-child {
             padding: 0 0 20px 0;
         }
     }
