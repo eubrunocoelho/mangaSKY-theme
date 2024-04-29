@@ -71,8 +71,10 @@
         margin: 0 0 8px 0;
         text-transform: capitalize;
     }
+}
 
-    &__types {
+.type {
+    &__list {
         display: flex;
         flex-wrap: wrap;
         gap: 4px;
