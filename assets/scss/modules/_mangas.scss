@@ -18,6 +18,10 @@
         display: flex;
         padding: 20px 0 20px 0;
         width: 100%;
+
+        &:only-child {
+            padding: 0 0 20px 0;
+        }
     }
 
     &__cover {
@@ -153,7 +157,7 @@
     }
 }
 
-@media screen and (min-width: 590px) {
+@media screen and (min-width: 860px) {
     .mangas {
         &__cover {
             height: 194px;
