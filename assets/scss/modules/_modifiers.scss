@@ -4,6 +4,34 @@
  * =================================================================================
  */
 
+.mb {
+    &--0 {
+        margin-bottom: 0px !important;
+    }
+
+    &--5 {
+        margin-bottom: 5px !important;
+    }
+}
+
+.status {
+    &--canceled {
+        background: $status-canceled;
+    }
+    
+    &--complete {
+        background: $status-complete;
+    }
+
+    &--on-going {
+        background: $status-on-going;
+    }
+
+    &--paused {
+        background: $status-paused;
+    }
+}
+
 .socials {
     &--facebook {
         background: $brands-facebook-color;
@@ -27,15 +55,5 @@
         &--author {
             color: $black-color-2;
         }
-    }
-}
-
-.mb {
-    &--0 {
-        margin-bottom: 0px !important;
-    }
-
-    &--5 {
-        margin-bottom: 5px !important;
     }
 }
