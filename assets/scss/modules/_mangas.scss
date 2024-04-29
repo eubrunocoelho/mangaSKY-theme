@@ -14,7 +14,9 @@
     width: 100%;
 
     &__summary {
+        border-bottom: 1px solid $gray-color-1;
         display: flex;
+        padding: 20px 0 20px 0;
         width: 100%;
     }
 
@@ -27,7 +29,6 @@
         height: 166px;
         justify-content: center;
         margin: 0 8px 0 0;
-        min-height: 166px;
         width: 102px;
     }
 
@@ -51,7 +52,7 @@
         display: flex;
         flex-direction: column;
         flex: 1;
-        padding: 7px 0 0 0;
+        padding: 0 0 0 0;
         width: 100%;
     }
 }
@@ -117,5 +118,57 @@
         &:hover {
             text-decoration: none;
         }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .mangas {
+        padding: 60px 14px 30px 14px;
+
+        &__cover {
+            height: 186px;
+            width: 122px;
+        }
+
+        &__link {
+            height: 176px;
+        }
+    }
+
+    .recents {
+        &__title {
+            font-size: 25px;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    .chapters {
+        &__list {
+            margin: 0 0 10px 0;
+        }
+
+        &__list-item {
+            padding: 10px 16px 10px 16px;
+        }
+    }
+}
+
+@media screen and (min-width: 590px) {
+    .mangas {
+        &__cover {
+            height: 194px;
+            margin: 0 12px 0 0;
+            width: 130px;
+        }
+
+        &__link {
+            height: 184px;
+        }
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .mangas {
+        padding: 60px 24px 30px 24px;
     }
 }
