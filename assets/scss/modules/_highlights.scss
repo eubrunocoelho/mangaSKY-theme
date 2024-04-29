@@ -5,6 +5,10 @@
  */
 
 .highlights {
+    &__list {
+        display: none;
+    }
+
     &__carousel {
         height: 100%;
         width: 100%;
@@ -81,6 +85,35 @@
             font-weight: 700;
             text-decoration: none;
             text-transform: capitalize;
+        }
+    }
+}
+
+@media screen and (min-width: 740px) {
+    .highlights {
+        &__list {
+            display: flex;
+            column-gap: 30px;
+            position: absolute;
+            right: 40px;
+            top: 20px;
+        }
+
+        &__list-link {
+            color: $gray-color-4;
+            font-family: $rajdhani;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            &.active {
+                color: $blue-color-1;
+            }
         }
     }
 }
