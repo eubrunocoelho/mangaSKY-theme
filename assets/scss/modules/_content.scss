@@ -13,6 +13,11 @@
     position: relative;
     width: 100%;
 
+    &--single {
+        border-radius: $border-radius-11;
+        padding: 20px 10px 20px 10px;
+    }
+
     &__title {
         align-items: center;
         background: $blue-color-1;
@@ -35,11 +40,19 @@
 @media screen and (min-width: 480px) {
     .content {
         padding: 60px 14px 30px 14px;
+
+        &--single {
+            padding: 20px 14px 20px 14px;
+        }
     }
 }
 
 @media screen and (min-width: 920px) {
     .content {
         padding: 60px 24px 30px 24px;
+
+        &--single {
+            padding: 20px 24px 20px 24px;
+        }
     }
 }
