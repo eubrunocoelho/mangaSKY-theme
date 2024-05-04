@@ -5,6 +5,13 @@
  */
 
 .mangas {
+    .item {
+        &:only-child {
+            border-bottom: none;
+            padding: 0 0 0 0 !important;
+        }
+    }
+
     &__summary {
         border-bottom: 1px solid $gray-color-1;
         display: flex;
@@ -45,15 +52,49 @@
         width: 100%;
     }
 
-    &__recents {
+    &__recents,
+    &__item {
         display: flex;
         flex: 1;
         flex-direction: column;
         width: 100%;
     }
+
+    &__item {
+        .types {
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px;
+                margin: 0 0 8px 0;
+
+                &-item {
+                    align-items: center;
+                    border: 1px solid $gray-color-1;
+                    border-radius: $border-radius-9;
+                    color: $blue-color-1;
+                    display: flex;
+                    font-family: $pt-sans-narrow;
+                    font-size: 14px;
+                    font-weight: 700;
+                    height: 24px;
+                    justify-content: center;
+                    padding: 0 11px 0 11px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .genres {
+            &__list {
+                margin: 0 0 0 0;
+            }
+        }
+    }
 }
 
-.recents {
+.recents,
+.item {
     &__title {
         color: $black-color-2;
         font-family: $pt-sans-narrow;
@@ -62,7 +103,9 @@
         margin: 0 0 8px 0;
         text-transform: capitalize;
     }
+}
 
+.recents {
     &__time,
     &__scan {
         align-items: center;
@@ -83,6 +126,24 @@
         justify-content: center;
         margin: 0 2px 0 0;
         width: 18px;
+    }
+}
+
+.item {
+    &__status {
+        align-items: center;
+        border-radius: $border-radius-10;
+        color: $white-color-1;
+        display: flex;
+        font-family: $pt-sans-narrow;
+        font-size: 16px;
+        font-weight: 700;
+        height: 30px;
+        justify-content: center;
+        margin: 0 0 8px 0;
+        padding: 0 11px 0 11px;
+        text-transform: uppercase;
+        width: max-content;
     }
 }
 
@@ -128,9 +189,18 @@
         &__link {
             height: 176px;
         }
+
+        &__item {
+            .genres {
+                &__list {
+                    gap: 10px;
+                }
+            }
+        }
     }
 
-    .recents {
+    .recents,
+    .item {
         &__title {
             font-size: 25px;
             margin: 0 0 10px 0;
@@ -143,6 +213,24 @@
 
             &-item {
                 padding: 10px 16px 10px 16px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 586px) {
+    .mangas {
+        &__item {
+            .genres {
+                &__list {
+                    &-item {
+                        height: 32px;
+                    }
+                    
+                    &-link {
+                        font-size: 17px;
+                    }
+                }
             }
         }
     }
