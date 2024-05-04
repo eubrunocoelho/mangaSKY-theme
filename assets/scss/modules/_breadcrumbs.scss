@@ -1,0 +1,30 @@
+/**
+ * =================================================================================
+ * BREADCRUMBS
+ * =================================================================================
+ */
+
+.breadcrumbs {
+    margin: 4px 0 20px 0;
+    padding: 4px 0 4px 0;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        word-break: break-word;
+
+        &-item {
+            color: $gray-color-6;
+            display: flex;
+            font-family: $roboto;
+            font-size: 13px;
+            font-weight: 400;
+
+            &:not(:first-child)::before {
+                color: $gray-color-4;
+                content: '\00bb';
+                padding: 0 4px 0 4px;
+            }
+        }
+    }
+}

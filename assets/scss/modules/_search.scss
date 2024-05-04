@@ -22,7 +22,7 @@
         background: $white-color-1;
         border: 1px solid $white-color-2;
         border-radius: $border-radius-1;
-        color: $gray-color-4;
+        color: $gray-color-5;
         font-family: $roboto;
         font-size: 18px;
         font-weight: 500;
@@ -33,7 +33,7 @@
     }
 
     &__input::placeholder {
-        color: lighten($gray-color-4, 26%);
+        color: lighten($gray-color-5, 26%);
     }
 
     &__button {
