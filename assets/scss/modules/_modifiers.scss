@@ -14,6 +14,13 @@
     }
 }
 
+.content {
+    &--single {
+        border-radius: $border-radius-11;
+        padding: 20px 10px 20px 10px;
+    }
+}
+
 .status {
     &--canceled {
         background: $status-canceled;
