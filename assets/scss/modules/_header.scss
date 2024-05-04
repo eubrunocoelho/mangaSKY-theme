@@ -128,38 +128,38 @@
     .menu {
         &__list {
             display: flex;
-        }
 
-        &__list-item {
-            height: 100%;
-            padding: 38px 11px 10px 11px;
+            &-item {
+                height: 100%;
+                padding: 38px 11px 10px 11px;
 
-            &.active {
-                background: $blue-color-3;
-                border-radius: $border-radius-2;
-                position: relative;
-                height: max-content;
+                &.active {
+                    background: $blue-color-3;
+                    border-radius: $border-radius-2;
+                    position: relative;
+                    height: max-content;
 
-                &::before {
-                    background: $blue-color-2;
-                    content: '';
-                    height: 8px;
-                    left: 0;
-                    overflow: 1;
-                    position: absolute;
-                    top: 0;
-                    width: 100%;
+                    &::before {
+                        background: $blue-color-2;
+                        content: '';
+                        height: 8px;
+                        left: 0;
+                        overflow: 1;
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                    }
                 }
             }
-        }
 
-        &__list-link {
-            color: $gray-color-4;
-            text-decoration: none;
-
-            &.active {
-                color: $white-color-1;
+            &-link {
+                color: $gray-color-4;
                 text-decoration: none;
+
+                &.active {
+                    color: $white-color-1;
+                    text-decoration: none;
+                }
             }
         }
     }
