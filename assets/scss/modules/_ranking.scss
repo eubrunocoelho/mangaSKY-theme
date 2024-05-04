@@ -5,10 +5,8 @@
  */
 
 .ranking {
-    &-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+    display: grid;
+    grid-template-columns: 1fr;
 
     &__summary {
         border-bottom: 1px solid $gray-color-1;
@@ -84,10 +82,8 @@
 
 @media screen and (min-width: 620px) {
     .ranking {
-        &-wrapper {
-            grid-template-columns: 1fr 1fr;
-            column-gap: 20px;
-        }
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
 
         &__summary {
             &:nth-child(1) {
@@ -108,9 +104,7 @@
 
 @media screen and (min-width: 860px) {
     .ranking {
-        &-wrapper {
-            grid-template-columns: 1fr;
-        }
+        grid-template-columns: 1fr;
 
         &__summary {
             &:nth-child(2) {
