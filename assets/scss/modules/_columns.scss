@@ -25,11 +25,12 @@
 
 @media screen and (min-width: 860px) {
     .columns {
+        column-gap: 30px;
         flex-direction: row;
+        row-gap: 0;
 
         &__section {
             flex: 1;
-            margin: 0 30px 0 0;
         }
 
         &__aside {
