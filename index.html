@@ -59,20 +59,22 @@
         </section>
         <section class="section content">
             <h1 class="content__title">Mangás em Destaque</h1>
-            <ul class="highlights__list">
-                <li class="highlights__list-item">
-                    <a href="#" class="highlights__list-link active">Hoje</a>
-                </li>
-                <li class="highlights__list-item">
-                    <a href="#" class="highlights__list-link">Esta semana</a>
-                </li>
-                <li class="highlights__list-item">
-                    <a href="#" class="highlights__list-link">Este mês</a>
-                </li>
-                <li class="highlights__list-item">
-                    <a href="#" class="highlights__list-link">Este ano</a>
-                </li>
-            </ul>
+            <nav class="highlights__menu">
+                <ul class="highlights__list">
+                    <li class="highlights__list-item">
+                        <a href="#" class="highlights__list-link active">Hoje</a>
+                    </li>
+                    <li class="highlights__list-item">
+                        <a href="#" class="highlights__list-link">Esta semana</a>
+                    </li>
+                    <li class="highlights__list-item">
+                        <a href="#" class="highlights__list-link">Este mês</a>
+                    </li>
+                    <li class="highlights__list-item">
+                        <a href="#" class="highlights__list-link">Este ano</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="swiper highlights__carousel">
                 <div class="swiper-wrapper">
                     <!-- start carousel item -->
@@ -429,7 +431,7 @@
                             <div class="ranking__info">
                                 <a href="#" class="info__title">One Piece</a>
                                 <ul class="type__list">
-                                    <li class="type__item type">Mangá</li>
+                                    <li class="type__list-item type">Mangá</li>
                                 </ul>
                                 <span class="status status--on-going">Em Publicação</span>
                             </div>
@@ -445,7 +447,7 @@
                             <div class="ranking__info">
                                 <a href="#" class="info__title">One-Punch Man</a>
                                 <ul class="type__list">
-                                    <li class="type__item type">Mangá</li>
+                                    <li class="type__list-item type">Mangá</li>
                                 </ul>
                                 <span class="status status--on-going">Em Publicação</span>
                             </div>
@@ -461,8 +463,8 @@
                             <div class="ranking__info">
                                 <a href="#" class="info__title">Tower Of God - Season 3</a>
                                 <ul class="type__list">
-                                    <li class="type__item type">Manhwa</li>
-                                    <li class="type__item type">Webtton</li>
+                                    <li class="type__list-item type">Manhwa</li>
+                                    <li class="type__list-item type">Webtoon</li>
                                 </ul>
                                 <span class="status status--on-going">Em Publicação</span>
                             </div>
@@ -478,7 +480,7 @@
                             <div class="ranking__info">
                                 <a href="#" class="info__title">Jujutsu Kaisen</a>
                                 <ul class="type__list">
-                                    <li class="type__item type">Mangá</li>
+                                    <li class="type__list-item type">Mangá</li>
                                 </ul>
                                 <span class="status status--on-going">Em Publicação</span>
                             </div>
@@ -494,7 +496,7 @@
                             <div class="ranking__info">
                                 <a href="#" class="info__title">Naruto</a>
                                 <ul class="type__list">
-                                    <li class="type__item type">Mangá</li>
+                                    <li class="type__list-item type">Mangá</li>
                                 </ul>
                                 <span class="status status--complete">Completo</span>
                             </div>
@@ -510,7 +512,7 @@
                             <div class="ranking__info">
                                 <a href="#" class="info__title">Boruto: Naruto Next Generations</a>
                                 <ul class="type__list">
-                                    <li class="type__item type">Mangá</li>
+                                    <li class="type__list-item type">Mangá</li>
                                 </ul>
                                 <span class="status status--complete">Completo</span>
                             </div>
@@ -526,7 +528,7 @@
                             <div class="ranking__info">
                                 <a href="#" class="info__title">Black Clover</a>
                                 <ul class="type__list">
-                                    <li class="type__item type">Mangá</li>
+                                    <li class="type__list-item type">Mangá</li>
                                 </ul>
                                 <span class="status status--paused">Pausado</span>
                             </div>
@@ -542,7 +544,7 @@
                             <div class="ranking__info">
                                 <a href="#" class="info__title">Kimetsu No Yaiba</a>
                                 <ul class="type__list">
-                                    <li class="type__item type">Mangá</li>
+                                    <li class="type__list-item type">Mangá</li>
                                 </ul>
                                 <span class="status status--complete">Completo</span>
                             </div>
@@ -556,28 +558,30 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__top">
-                <ul class="socials__list">
-                    <li class="socials__list-item socials--facebook">
-                        <a href="#" class="socials__list-link">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="socials__list-item socials--twitter-x">
-                        <a href="#" class="socials__list-link">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="socials__list-item socials--discord">
-                        <a href="#" class="socials__list-link">
-                            <i class="fa-brands fa-discord"></i>
-                        </a>
-                    </li>
-                    <li class="socials__list-item socials--contact">
-                        <a href="#" class="socials__list-link">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                    </li>
-                </ul>
+                <nav class="footer__socials">
+                    <ul class="socials__list">
+                        <li class="socials__list-item socials--facebook">
+                            <a href="#" class="socials__list-link">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="socials__list-item socials--twitter-x">
+                            <a href="#" class="socials__list-link">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="socials__list-item socials--discord">
+                            <a href="#" class="socials__list-link">
+                                <i class="fa-brands fa-discord"></i>
+                            </a>
+                        </li>
+                        <li class="socials__list-item socials--contact">
+                            <a href="#" class="socials__list-link">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div class="footer__copy">
                 <p><a href="#" class="copy__link">mangaSKY</a> © 2024 - Developed by: <a href="http://eubrunocoelho.vercel.app" target="_blank" class="copy__link copy__link--author">Bruno Coelho</p>
