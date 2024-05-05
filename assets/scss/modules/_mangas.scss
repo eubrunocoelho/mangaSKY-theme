@@ -10,6 +10,11 @@
             border-bottom: none;
             padding: 0 0 0 0 !important;
         }
+
+        &:last-child {
+            border-bottom: none;
+            padding: 20px 0 0 0;
+        }
     }
 
     &__summary {
@@ -109,7 +114,7 @@
     &__time,
     &__scan {
         align-items: center;
-        color: $gray-color-5;
+        color: $gray-color-6;
         display: flex;
         font-family: $roboto-condensed;
         font-size: 14px;
