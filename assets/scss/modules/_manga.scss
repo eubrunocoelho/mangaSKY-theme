@@ -59,6 +59,7 @@
         font-size: 33px;
         font-weight: 700;
         margin: 0 0 12px 0;
+        text-transform: capitalize;
     }
 
     &__info {
@@ -119,7 +120,7 @@
     }
 
     &__datasheet {
-        margin: 20px 0 0 0;
+        margin: 26px 0 0 0;
         overflow-x: auto;
         width: 100%;
     }
@@ -183,7 +184,6 @@
             th,
             td {
                 padding: 10px 12px 10px 0;
-                text-transform: capitalize;
             }
 
             th {
