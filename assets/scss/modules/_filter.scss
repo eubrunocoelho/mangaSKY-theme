@@ -1,0 +1,54 @@
+/**
+ * =================================================================================
+ * FILTER
+ * =================================================================================
+ */
+
+.filter {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+
+    &__title {
+        border-bottom: 1px solid $gray-color-1;
+        color: $black-color-2;
+        font-family: $pt-sans-narrow;
+        font-size: 23px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 0 0 8px 0;
+    }
+
+    &__nav {
+        margin: 14px 0 0 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+
+        &-link {
+            color: $gray-color-6;
+            font-family: $pt-sans-narrow;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+    }
+}
+
+@media screen and (min-width: 496px) {
+    .filter {
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 0;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .filter {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+}

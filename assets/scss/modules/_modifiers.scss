@@ -32,6 +32,12 @@
     }
 }
 
+.text {
+    &--blue {
+        color: $blue-color-1;
+    }
+}
+
 .socials {
     &--facebook {
         background: $brands-facebook-color;

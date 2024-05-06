@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mangaSKY - Leitor de mangás online pt-BR</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="top-search" style="display: none;">
+        <form>
+            <input type="text" class="top-search__input" placeholder="Pesquisar...">
+            <button class="top-search__button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+    </section>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="header__logo">mangaSKY</a>
+            <div class="wrapper">
+                <nav class="header__menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item active">
+                            <a href="./index.html" class="menu__list-link active">Home</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="./mangas.html" class="menu__list-link">Mangás</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">Scans</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__button-group">
+                    <button class="header__button button__toggle-box">
+                        <span class="button__toggle-line"></span>
+                        <span class="button__toggle-line"></span>
+                        <span class="button__toggle-line"></span>
+                    </button>
+                    <span class="header__division-line">
+                        <!-- -->
+                    </span>
+                    <button class="header__button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <nav class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                    <a href="./index.html" class="breadcrumbs__list-link">Home</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <span class="breadcrumbs__list-link">Resultado de Pesquisa para "bleach"</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="columns">
+            <div class="columns__aside">
+                <aside class="aside content">
+                    <h1 class="content__title">Filtrar</h1>
+                    <div class="filter">
+                        <div class="filter__item">
+                            <h2 class="filter__title">Tipo</h2>
+                            <nav class="filter__nav">
+                                <ul class="filter__list">
+                                    <li class="filter__list-item">
+                                        <span class="filter__list-link">HQ</span>
+                                    </li>
+                                    <li class="filter__list-item">
+                                        <a href="#" class="filter__list-link">Mangá <span class="text--blue">(1)</a>
+                                    </li>
+                                    <li class="filter__list-item">
+                                        <span class="filter__list-link">Manhua</span>
+                                    </li>
+                                    <li class="filter__list-item">
+                                        <span class="filter__list-link">Manhwa</span>
+                                    </li>
+                                    <li class="filter__list-item">
+                                        <span class="filter__list-link">Novel</span>
+                                    </li>
+                                    <li class="filter__list-item">
+                                        <span class="filter__list-link">One-Shot</span>
+                                    </li>
+                                    <li class="filter__list-item">
+                                        <span class="filter__list-link">Webtoon</span>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="filter__item">
+                            <h2 class="filter__title">Status</h2>
+                            <nav class="filter__nav">
+                                <ul class="filter__list">
+                                    <li class="filter__list-item">
+                                        <a href="#" class="filter__list-link">Completo <span class="text--blue">(1)</a>
+                                    </li>
+                                    <li class="filter__list-item">
+                                        <span class="filter__list-link">Em Publicação</span>
+                                    </li>
+                                    <li class="filter__list-item">
+                                        <span class="filter__list-link">Pausado</span>
+                                    </li>
+                                    <li class="filter__list-item">
+                                        <span class="filter__list-link">Cancelado</span>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="columns__section">
+                <section class="section content">
+                    <h1 class="content__title">Resultado de Pesquisa</h1>
+                </section>
+                <nav class="section pagination">
+                    <ul class="pagination__list">
+                        <li class="pagination__list-item">
+                            <span class="pagination__list-link">«</span>
+                        </li>
+                        <li class="pagination__list-item active">
+                            <a href="#" class="pagination__list-link active">1</a>
+                        </li>
+                        <li class="pagination__list-item">
+                            <a href="#" class="pagination__list-link">2</a>
+                        </li>
+                        <li class="pagination__list-item">
+                            <span class="pagination__list-link">...</span>
+                        </li>
+                        <li class="pagination__list-item">
+                            <a href="#" class="pagination__list-link">80</a>
+                        </li>
+                        <li class="pagination__list-item">
+                            <a href="#" class="pagination__list-link">»</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <nav class="footer__socials">
+                    <ul class="socials__list">
+                        <li class="socials__list-item socials--facebook">
+                            <a href="#" class="socials__list-link">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="socials__list-item socials--twitter-x">
+                            <a href="#" class="socials__list-link">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="socials__list-item socials--discord">
+                            <a href="#" class="socials__list-link">
+                                <i class="fa-brands fa-discord"></i>
+                            </a>
+                        </li>
+                        <li class="socials__list-item socials--contact">
+                            <a href="#" class="socials__list-link">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__copy">
+                <p><a href="#" class="copy__link">mangaSKY</a> © 2024 - Developed by: <a href="http://eubrunocoelho.vercel.app" target="_blank" class="copy__link copy__link--author">Bruno Coelho</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>
