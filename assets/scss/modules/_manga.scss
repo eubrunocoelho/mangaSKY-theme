@@ -10,14 +10,18 @@
     width: 100%;
 
     &__summary {
+        align-items: center;
         display: grid;
         grid-template-areas: 'cover' 'info' 'synopsis';
+        height: 100%;
         row-gap: 16px;
         width: 100%;
 
-        .container {
+        .wrapper {
+            align-items: center;
             display: flex;
             grid-area: cover;
+            height: 100%;
             justify-content: center;
             width: 100%;
         }
@@ -29,8 +33,8 @@
         border: 1px solid $gray-color-1;
         border-radius: $border-radius-4;
         display: flex;
-        height: 302px;
         justify-content: center;
+        height: 302px;
         width: 200px;
     }
 
@@ -44,6 +48,7 @@
         align-items: center;
         display: flex;
         grid-area: info;
+        height: 100%;
         flex-direction: column;
         width: 100%;
     }
@@ -61,10 +66,10 @@
             width: 100%;
 
             &__list {
-                justify-content: center;
                 display: flex;
                 flex-wrap: wrap;
                 gap: 8px;
+                justify-content: center;
                 margin: 0 0 12px 0;
                 width: 100%;
 
@@ -108,8 +113,8 @@
         align-items: center;
         display: flex;
         grid-area: synopsis;
+        height: 100%;
         justify-content: center;
-        text-align: center;
         width: 100%;
     }
 }
@@ -132,11 +137,62 @@
     }
 }
 
-.synopsis{
+.synopsis {
     &__text {
         color: $black-color-3;
         font-family: $roboto;
         font-size: 14px;
         font-weight: 500;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 548px) {
+    .manga {
+        &__summary {
+            grid-template-areas: 'cover info' 'synopsis synopsis';
+            grid-template-columns: calc(200px + 16px) auto;
+
+            .wrapper {
+                align-items: start;
+                justify-content: start;
+            }
+        }
+
+        &__info {
+            align-items: start;
+            justify-content: start;
+
+            .types {
+                &__list {
+                    justify-content: start;
+                }
+            }
+
+            .genres {
+                &__list {
+                    justify-content: start;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 618px) {
+    .manga {
+        &__summary {
+            grid-template-areas: 'cover info' 'cover synopsis';
+            grid-template-rows: auto 1fr;
+        }
+
+        &__synopsis {
+            align-items: start;
+        }
+    }
+
+    .synopsis {
+        &__text {
+            text-align: start;
+        }
     }
 }
