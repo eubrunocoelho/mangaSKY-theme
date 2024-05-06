@@ -5,11 +5,14 @@
  */
 
 .genres {
+    width: 100%;
+
     &__list {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
         margin: 0 0 18px 0;
+        width: 100%;
 
         &-item {
             align-items: center;

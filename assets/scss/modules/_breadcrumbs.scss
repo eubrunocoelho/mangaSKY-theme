@@ -7,11 +7,13 @@
 .breadcrumbs {
     margin: 4px 0 20px 0;
     padding: 4px 0 4px 0;
+    width: 100%;
 
     &__list {
         display: flex;
         flex-wrap: wrap;
         word-break: break-word;
+        width: 100%;
 
         &-item {
             color: $gray-color-7;

@@ -5,6 +5,8 @@
  */
 
 .mangas {
+    width: 100%;
+
     .item {
         &:only-child {
             border-bottom: none;
@@ -113,6 +115,7 @@
                 flex-wrap: wrap;
                 gap: 4px;
                 margin: 0 0 8px 0;
+                width: 100%;
 
                 &-item {
                     align-items: center;
@@ -152,7 +155,6 @@
 }
 
 .recents {
-
     &__time,
     &__scan {
         align-items: center;
@@ -162,6 +164,7 @@
         font-size: 14px;
         font-weight: 500;
         height: 18px;
+        width: 100%;
     }
 
     &__icon {

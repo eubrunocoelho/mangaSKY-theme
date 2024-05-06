@@ -7,6 +7,7 @@
 .ranking {
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
 
     &__summary {
         border-bottom: 1px solid $gray-color-1;
@@ -60,11 +61,14 @@
     }
 
     .types {
+        width: 100%;
+
         &__list {
             display: flex;
             flex-wrap: wrap;
             gap: 4px;
             margin: 0 0 8px 0;
+            width: 100%;
 
             &-item {
                 align-items: center;
