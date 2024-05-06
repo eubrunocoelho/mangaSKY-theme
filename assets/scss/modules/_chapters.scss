@@ -23,6 +23,7 @@
 
     &__date {
         display: flex;
+        margin: 0 10px 0 0;
 
         &-box {
             align-items: center;
@@ -36,15 +37,23 @@
             height: 38px;
             justify-content: center;
             text-transform: capitalize;
-            width: 98px;
+            width: 96px;
         }
     }
 
-    &__division-line {
-        background: $white-color-4;
-        height: 38px;
-        margin: 0 12px 0 12px;
-        width: 1px;
+    &__summary {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        width: 100%;
+
+        &::before {
+            background: $gray-color-1;
+            content: '';
+            height: 38px;
+            margin: 0 10px 0 0;
+            width: 1px;
+        }
     }
 
     &__link {
@@ -54,9 +63,81 @@
         font-size: 20px;
         font-weight: 700;
         width: 100%;
+    }
 
-        &:hover {
-            text-decoration: none;
+    &__scans {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 494px) {
+    .chapters {
+        &__date {
+            margin: 0 14px 0 0;
+
+            &-box {
+                font-size: 18px;
+                width: 100px;
+            }
+        }
+
+        &__summary {
+            &::before {
+                margin: 0 14px 0 0;
+            }
+        }
+
+        &__link {
+            font-size: 21px;
+        }
+
+        &__scans {
+            display: block;
+        }
+    }
+
+    .scans {
+        &__list {
+            align-items: center;
+            display: flex;
+            gap: 6px;
+
+            &-item {
+                align-items: center;
+                border: 1px solid $gray-color-1;
+                border-radius: $border-radius-9;
+                color: $blue-color-1;
+                display: flex;
+                font-family: $pt-sans-narrow;
+                font-size: 15px;
+                font-weight: 700;
+                height: 26px;
+                justify-content: center;
+                padding: 0 15px 0 15px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 572px) {
+    .chapters {
+        &__item {
+            padding: 10px 10px 10px 10px;
+        }
+
+        &__date {
+            margin: 0 20px 0 0;
+
+            &-box {
+                width: 118px;
+            }
+        }
+
+        &__summary {
+            &::before {
+                margin: 0 20px 0 0;
+            }
         }
     }
 }
