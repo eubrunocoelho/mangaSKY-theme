@@ -110,6 +110,8 @@
 
     &__item {
         .types {
+            width: 100%;
+
             &__list {
                 display: flex;
                 flex-wrap: wrap;
