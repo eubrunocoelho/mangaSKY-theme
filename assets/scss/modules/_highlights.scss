@@ -5,9 +5,7 @@
  */
 
 .highlights {
-    width: 100%;
-
-    &__list {
+    &__menu {
         display: none;
     }
 
@@ -93,6 +91,10 @@
 
 @media screen and (min-width: 740px) {
     .highlights {
+        &__menu {
+            display: block;
+        }
+
         &__list {
             display: flex;
             column-gap: 30px;
