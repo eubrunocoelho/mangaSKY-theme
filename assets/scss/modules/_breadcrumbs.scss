@@ -12,8 +12,8 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        word-break: break-word;
         width: 100%;
+        word-break: break-word;
 
         &-item {
             color: $gray-color-7;
