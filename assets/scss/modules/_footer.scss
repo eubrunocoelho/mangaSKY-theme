@@ -49,18 +49,19 @@
         justify-content: center;
         width: 100%;
 
-        &-item {
+        &-link {
             align-items: center;
             border-radius: $border-radius-1;
+            color: $white-color-1;
             display: flex;
+            font-size: 18px;
             height: 40px;
             justify-content: center;
             width: 40px;
-        }
 
-        &-link {
-            color: $white-color-1;
-            font-size: 18px;
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 }

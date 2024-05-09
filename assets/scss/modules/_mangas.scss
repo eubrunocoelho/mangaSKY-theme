@@ -210,22 +210,19 @@
         margin: 0 0 8px 0;
         width: 100%;
 
-        &-item {
+        &-link {
             align-items: center;
             background: $white-color-1;
             border: 1px solid $gray-color-1;
             border-radius: $border-radius-3;
+            color: $black-color-2;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            padding: 6px 13px 6px 13px;
-        }
-
-        &-link {
-            color: $black-color-2;
             font-family: $pt-sans-narrow;
             font-size: 20px;
             font-weight: 700;
+            justify-content: center;
+            padding: 6px 13px 6px 13px;
 
             &:hover {
                 text-decoration: none;
@@ -266,7 +263,7 @@
         &__list {
             margin: 0 0 10px 0;
 
-            &-item {
+            &-link {
                 padding: 10px 16px 10px 16px;
             }
         }
