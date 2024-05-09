@@ -77,7 +77,10 @@
                     </div>
                     <div class="form__group">
                         <label for="email" class="form__label">E-mail:</label>
-                        <input type="text" name="email" class="form__input" placeholder="Endereço de E-mail">
+                        <input type="text" name="email" class="form__input" placeholder="Endereço de E-mail" value="brunobcoelho@mangasky">
+                        <div class="alert alert--danger mt--12">
+                            O endereço de e-mail está inválido.
+                        </div>
                     </div>
                     <div class="form__group">
                         <label for="subject" class="form__label">Assunto:</label>
@@ -90,6 +93,20 @@
                 </div>
                 <button type="submit" class="button form__button">Enviar Mensagem</button>
             </form>
+            <div class="contact__messages">
+                <div class="alert alert--default">
+                    Mensagem padrão.
+                </div>
+                <div class="alert alert--success">
+                    Mensagem de sucesso.
+                </div>
+                <div class="alert alert--danger">
+                    Mensagem de erro.
+                </div>
+                <div class="alert alert--warning">
+                    Mensagem de aviso.
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">

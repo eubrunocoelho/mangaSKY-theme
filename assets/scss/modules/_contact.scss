@@ -15,6 +15,14 @@
             margin: 0 0 20px 0;
         }
     }
+
+    &__messages {
+        row-gap: 14px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
 }
 
 .form {
@@ -45,7 +53,7 @@
         color: $gray-color-6;
         font-family: $roboto;
         font-size: 15px;
-        font-weight: 400;
+        font-weight: 500;
         height: 46px;
         outline: none;
         padding: 0 16px 0 16px;
@@ -63,12 +71,16 @@
         color: $gray-color-6;
         font-family: $roboto;
         font-size: 15px;
-        font-weight: 400;
+        font-weight: 500;
         height: 120px;
         outline: none;
         padding: 18px 16px 18px 16px;
         resize: none;
         width: 100%;
+
+        &::placeholder {
+            color: lighten($gray-color-6, 8%);
+        }
     }
 }
 

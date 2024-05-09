@@ -42,3 +42,13 @@
         width: 10px;
     }
 }
+
+.alert {
+    border: 1px solid;
+    border-radius: $border-radius-10;
+    font-family: $roboto;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 16px 16px 16px 16px;
+    width: 100%;
+}
