@@ -1,0 +1,15 @@
+.pre-loader {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: $gray-color-1;
+    border-right-color: $blue-color-1;
+    animation: looping 1s infinite linear;
+}
+
+@keyframes looping {
+    to {
+        transform: rotate(1turn)
+    }
+}

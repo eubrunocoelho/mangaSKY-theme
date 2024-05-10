@@ -15,5 +15,24 @@ $(document).ready(
                 );
             }
         );
+
+        let genresPreloader = $('#genres-pre-loader');
+        let genresButton = $('#genres-button');
+        let genresItems = $('#genres-wrapper li');
+        let genresItemsLength = genresItems.length;
+
+        setTimeout(
+            () => {
+                genresPreloader.hide();
+                genresItems.slice(0, 18).show();
+            }, 1600
+        );
+
+        genresButton.click(
+            () => {
+                genresItems.slice(0, genresItemsLength).show();
+                genresButton.hide();
+            }
+        )
     }
 );
