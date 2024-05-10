@@ -103,13 +103,18 @@
 
 .info {
     &__title {
-        color: $black-color-2;
+        color: $black-color-3;
         font-family: $pt-sans-narrow;
         font-size: 21px;
         font-weight: 700;
         margin: 0 0 8px 0;
         text-transform: capitalize;
+        transition: .1s ease-in-out;
         width: 100%;
+
+        &:hover {
+            color: $blue-color-1;
+        }
     }
 }
 

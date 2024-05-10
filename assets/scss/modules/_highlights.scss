@@ -46,11 +46,16 @@
     &__img {
         border-radius: $border-radius-7;
         height: 100%;
+        transition: .04s ease-in-out;
         width: 100%;
+
+        &:hover {
+            opacity: .88;
+        }
     }
 
     &__chapter {
-        background: $black-opacity-color;
+        background: rgba($black-color-2, .7);
         border-radius: $border-radius-8;
         color: $white-color-1;
         font-family: $pt-sans-narrow;
@@ -60,8 +65,10 @@
         position: absolute;
         right: 5px;
         top: 20px;
+        transition: .08s ease-in-out;
 
         &:hover {
+            background: rgba($black-color-2, .88);
             text-decoration: none;
         }
     }
@@ -74,18 +81,26 @@
         justify-content: center;
         text-align: center;
         text-transform: capitalize;
+        transition: .08s ease-in-out;
         width: 100%;
         word-break: break-word;
 
+        &:hover {
+            a {
+                color: $blue-color-1;
+            }
+        }
+
         a {
-            color: $black-color-2;
+            color: $black-color-3;
             font-family: $pt-sans-narrow;
             font-size: 19px;
             font-weight: 700;
             height: 100%;
-            padding: 14px 5px 14px 5px;
+            padding: 14px 8px 14px 8px;
             text-decoration: none;
             text-transform: capitalize;
+            transition: .08s ease-in-out;
             width: 100%;
         }
     }
@@ -111,11 +126,11 @@
                 font-weight: 700;
                 text-decoration: none;
                 text-transform: uppercase;
-    
+
                 &:hover {
                     text-decoration: none;
                 }
-    
+
                 &.active {
                     color: $blue-color-1;
                 }

@@ -52,7 +52,7 @@
     }
 
     &__title {
-        color: $black-color-2;
+        color: $black-color-3;
         font-family: $pt-sans-narrow;
         font-size: 33px;
         font-weight: 700;
@@ -140,7 +140,7 @@
 
 .synopsis {
     &__text {
-        color: $black-color-3;
+        color: $black-color-4;
         font-family: $roboto;
         font-size: 14px;
         font-weight: 500;
@@ -155,7 +155,7 @@
 
         tr {
             border-bottom: 1px solid $gray-color-1;
-            color: $black-color-3;
+            color: $black-color-4;
             display: flex;
             font-family: $roboto;
             font-size: 14px;

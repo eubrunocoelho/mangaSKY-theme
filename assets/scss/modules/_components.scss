@@ -8,7 +8,7 @@
     background: $white-color-1;
     border: 2px solid $blue-color-1;
     border-radius: $border-radius-1;
-    color: $black-color-2;
+    color: $black-color-3;
     font-family: $pt-sans-narrow;
     font-size: 19px;
     font-weight: 700;
@@ -25,7 +25,18 @@
         height: 35px;
         justify-content: center;
         margin: 10px 0 0 0;
+        transition: .04s ease-in-out;
         width: 100%;
+
+        &:hover {
+            background: $blue-color-1;
+
+            .button {
+                &__ellipse {
+                    border: 2px solid $white-color-1;
+                }
+            }
+        }
     }
 
     &__ellipses {
@@ -39,6 +50,7 @@
         border: 2px solid $blue-color-1;
         border-radius: $border-ellipse;
         height: 10px;
+        transition: .04s ease-in-out;
         width: 10px;
     }
 }
