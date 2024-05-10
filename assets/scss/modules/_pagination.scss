@@ -35,7 +35,9 @@
             justify-content: center;
             width: 37px;
 
-            &:hover {
+            &:not(span):hover {
+                color: $blue-color-1;
+                border: 2px solid $blue-color-1;
                 text-decoration: none;
             }
 

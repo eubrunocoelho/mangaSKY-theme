@@ -15,7 +15,12 @@
     height: 42px;
     line-height: 0;
     text-transform: uppercase;
+    transition: .04s ease-in-out;
     width: 100%;
+
+    &:hover {
+        color: $blue-color-1;
+    }
 
     &__load-more {
         align-items: center;

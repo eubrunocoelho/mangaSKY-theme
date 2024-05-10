@@ -86,6 +86,8 @@
         word-break: break-word;
 
         &:hover {
+            background: lighten($white-color-4, 2%);
+
             a {
                 color: $blue-color-1;
             }

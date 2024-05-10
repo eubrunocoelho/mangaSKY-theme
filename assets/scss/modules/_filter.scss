@@ -38,6 +38,11 @@
             font-size: 20px;
             font-weight: 700;
             text-transform: capitalize;
+            transition: .1s ease-in-out;
+
+            &:not(span):hover {
+                color: $blue-color-1;
+            }
         }
     }
 }
