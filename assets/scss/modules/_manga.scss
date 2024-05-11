@@ -118,6 +118,11 @@
         overflow-x: auto;
         width: 100%;
     }
+
+    &__share {
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
 }
 
 .info {
@@ -190,6 +195,32 @@
                 flex: 1;
                 text-align: start;
                 width: 100%;
+            }
+        }
+    }
+}
+
+.share {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+
+        &-link {
+            align-items: center;
+            border-radius: $border-ellipse;
+            color: $white-color-1;
+            display: flex;
+            font-size: 18px;
+            height: 38px;
+            justify-content: center;
+            transition: .08s ease-in-out;
+            width: 40px;
+
+            &:hover {
+                text-decoration: none;
             }
         }
     }

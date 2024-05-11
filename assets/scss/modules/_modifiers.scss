@@ -81,20 +81,44 @@
 }
 
 .socials {
-    &--facebook {
-        background: $brands-facebook-color;
-    }
+    &--contact {
+        background: $blue-color-1;
 
-    &--twitter-x {
-        background: $brands-twitter-x-color;
+        &:hover {
+            background: darken($blue-color-1, 14%);
+        }
     }
 
     &--discord {
         background: $brands-discord-color;
+
+        &:hover {
+            background: darken($brands-discord-color, 14%);
+        }
     }
 
-    &--contact {
-        background: $blue-color-1;
+    &--facebook {
+        background: $brands-facebook-color;
+
+        &:hover {
+            background: darken($brands-facebook-color, 14%);
+        }
+    }
+
+    &--twitter-x {
+        background: $brands-twitter-x-color;
+
+        &:hover {
+            background: darken($brands-twitter-x-color, 14%);
+        }
+    }
+
+    &--whatsapp {
+        background: $brands-whatsapp-color;
+
+        &:hover {
+            background: darken($brands-whatsapp-color, 14%);
+        }
     }
 }
 
