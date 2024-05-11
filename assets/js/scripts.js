@@ -25,6 +25,7 @@ $(document).ready(
             () => {
                 genresPreloader.hide();
                 genresItems.slice(0, 18).show();
+                genresButton.show();
             }, 1600
         );
 
@@ -33,6 +34,6 @@ $(document).ready(
                 genresItems.slice(0, genresItemsLength).show();
                 genresButton.hide();
             }
-        )
+        );
     }
 );
