@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="window-overlay" style="display: none;">
-        <section class="sidebar">
+    <div id="window-overlay" class="window-overlay">
+        <section class="sidebar" style="display: none;">
             <div class="sidebar__top">
                 <a href="./index.html" class="sidebar__logo">mangaSKY</a>
                 <button class="sidebar__button button__close-box">
@@ -65,7 +65,7 @@
                     </ul>
                 </nav>
                 <div class="header__button-group">
-                    <button class="header__button button__toggle-box">
+                    <button id="sidebar-button" class="header__button button__toggle-box">
                         <span class="button__toggle-line"></span>
                         <span class="button__toggle-line"></span>
                         <span class="button__toggle-line"></span>
