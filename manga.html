@@ -9,10 +9,10 @@
 </head>
 <body>
     <div id="window-overlay" class="window-overlay closed">
-        <section class="sidebar" style="display: none;">
+        <section id="sidebar-wrapper" class="sidebar">
             <div class="sidebar__top">
                 <a href="./index.html" class="sidebar__logo">mangaSKY</a>
-                <button class="sidebar__button button__close-box">
+                <button id="sidebar-close" class="sidebar__button button__close-box">
                     <span class="button__close-line"></span>
                     <span class="button__close-line"></span>
                 </button>
@@ -64,7 +64,7 @@
                     </ul>
                 </nav>
                 <div class="header__button-group">
-                    <button id="sidebar-button" class="header__button button__toggle-box">
+                    <button id="sidebar-open" class="header__button button__toggle-box">
                         <span class="button__toggle-line"></span>
                         <span class="button__toggle-line"></span>
                         <span class="button__toggle-line"></span>
@@ -72,7 +72,7 @@
                     <span class="header__division-line">
                         <!-- -->
                     </span>
-                    <button id="search-button" class="header__button">
+                    <button id="sidebar-open" class="header__button">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </div>

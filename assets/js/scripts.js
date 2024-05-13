@@ -1,18 +1,18 @@
 $(document).ready(
     () => {
         const searchButton = $('#search-button');
-        const searchWrapper = $('#search-wrapper');
+        const search = $('#search-wrapper');
 
-        searchWrapper.height(0);
+        search.height(0);
 
         searchButton.click(
             () => {
-                searchWrapper.toggleClass('visible');
+                search.toggleClass('visible');
             }
         );
 
         const genresPreloader = $('#genres-pre-loader');
-        const genresButton = $('#genres-button');
+        const genresShowMore = $('#genres-show-more');
         const genresItems = $('#genres-wrapper li');
         const genresItemsLength = genresItems.length;
 
@@ -20,32 +20,43 @@ $(document).ready(
             () => {
                 genresPreloader.hide();
                 genresItems.slice(0, 18).show();
-                genresButton.show();
+                genresShowMore.show();
             }, 1600
         );
 
-        genresButton.click(
+        genresShowMore.click(
             () => {
                 genresItems.slice(0, genresItemsLength).show();
-                genresButton.hide();
+                genresShowMore.hide();
             }
         );
 
-        const sidebarButton = $('#sidebar-button');
+        const openSidebar = $('#sidebar-open');
+        const closeSidebar = $('#sidebar-close');
+        const sidebar = $('#sidebar-wrapper');
         const windowOverlay = $('#window-overlay');
 
-        sidebarButton.click(
+        openSidebar.click(
             () => {
                 windowOverlay.addClass('visible');
+                sidebar.addClass('visible');
             }
         );
+
+        closeSidebar.click(
+            () => {
+                sidebar.removeClass('visible');
+                windowOverlay.removeClass('visible');
+            }
+        )
 
         $(document).click(
             (event) => {
                 if (windowOverlay.is(event.target)) {
+                    sidebar.removeClass('visible');
                     windowOverlay.removeClass('visible');
                 }
             }
-        )
+        );
     }
 );
