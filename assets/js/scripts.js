@@ -1,25 +1,20 @@
 $(document).ready(
     () => {
-        let searchButton = $('#search-button');
-        let searchWrapper = $('#search-wrapper');
+        const searchButton = $('#search-button');
+        const searchWrapper = $('#search-wrapper');
 
         searchWrapper.height(0);
 
         searchButton.click(
             () => {
-                searchWrapper.toggleClass('closed');
-
-                searchWrapper.height(
-                    searchWrapper.hasClass('closed')
-                        ? 0 : '90px'
-                );
+                searchWrapper.toggleClass('visible');
             }
         );
 
-        let genresPreloader = $('#genres-pre-loader');
-        let genresButton = $('#genres-button');
-        let genresItems = $('#genres-wrapper li');
-        let genresItemsLength = genresItems.length;
+        const genresPreloader = $('#genres-pre-loader');
+        const genresButton = $('#genres-button');
+        const genresItems = $('#genres-wrapper li');
+        const genresItemsLength = genresItems.length;
 
         setTimeout(
             () => {
@@ -36,8 +31,8 @@ $(document).ready(
             }
         );
 
-        let sidebarButton = $('#sidebar-button');
-        let windowOverlay = $('#window-overlay');
+        const sidebarButton = $('#sidebar-button');
+        const windowOverlay = $('#window-overlay');
 
         sidebarButton.click(
             () => {

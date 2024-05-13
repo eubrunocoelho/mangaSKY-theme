@@ -50,6 +50,10 @@
     }
 }
 
+.search.visible {
+    height: 90px !important;
+}
+
 @media screen and (min-width: 480px) {
     .search {
         padding: 0 20px 0 20px;
