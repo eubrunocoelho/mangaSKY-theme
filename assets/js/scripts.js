@@ -35,5 +35,22 @@ $(document).ready(
                 genresButton.hide();
             }
         );
+
+        let sidebarButton = $('#sidebar-button');
+        let windowOverlay = $('#window-overlay');
+
+        sidebarButton.click(
+            () => {
+                windowOverlay.addClass('visible');
+            }
+        );
+
+        $(document).click(
+            (event) => {
+                if (windowOverlay.is(event.target)) {
+                    windowOverlay.removeClass('visible');
+                }
+            }
+        )
     }
 );
