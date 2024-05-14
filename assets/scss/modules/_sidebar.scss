@@ -17,12 +17,17 @@
     width: 290px;
     z-index: 9999;
 
+    &.visible {
+        transform: translateX(0) !important;
+    }
+
     &__top {
         align-items: center;
         border-bottom: 1px solid $gray-color-1;
         display: flex;
-        height: 72px;
+        height: 84px;
         justify-content: space-between;
+        padding: 0 0 6px 0;
         width: 100%;
     }
 
@@ -30,59 +35,46 @@
         background: url(../img/single-logo.png) center no-repeat;
         background-size: contain;
         display: block;
-        height: 60px;
+        height: 68px;
         text-indent: -99999px;
-        width: 46px;
+        width: 54px;
     }
 
     &__button {
-        background: $white-color-3;
-        border-radius: $border-radius-1;
-        height: 40px;
-        transition: .04s ease-in-out;
-        width: 40px;
-
-        &:hover {
-            background: $blue-color-1;
-
-            .button {
-                &__close-line {
-                    background: $white-color-1;
-                }
-            }
-        }
+        background: none !important;
+        height: 46px;
+        width: 46px;
     }
 
     &__menu {
         display: flex;
         justify-content: start;
-        margin: 30px 0 62px 0;
+        margin: 30px 0 98px 0;
         width: 100%;
     }
 
     &__list {
         display: flex;
         flex-direction: column;
-        row-gap: 14px;
-        padding: 0 0 0 4px;
+        row-gap: 22px;
         width: 100%;
 
         &-link {
             color: $black-color-5;
             font-family: $rajdhani;
-            font-size: 19px;
-            font-weight: 700;
+            font-size: 22px;
+            font-weight: 600;
             transition: .1s ease-in-out;
+
+            &.active {
+                color: $blue-color-1;
+            }
 
             &:hover {
                 color: $blue-color-1;
             }
         }
     }
-}
-
-.sidebar.visible {
-    transform: translateX(0) !important;
 }
 
 .button {
@@ -102,7 +94,7 @@
         position: absolute;
         top: 50%;
         transform-origin: center;
-        width: 20px;
+        width: 35px;
 
         &:first-child {
             transform: translateX(-50%) translateY(-50%) rotate(45deg);
