@@ -1,16 +1,18 @@
 $(document).ready(
     () => {
-        const searchButton = $('#search-button');
+        /*===== TOP SEARCH =====*/
+        const openSearch = $('#search-open');
         const search = $('#search-wrapper');
 
         search.height(0);
 
-        searchButton.click(
+        openSearch.click(
             () => {
                 search.toggleClass('visible');
             }
         );
 
+        /*===== GENRES LIST =====*/
         const genresPreloader = $('#genres-pre-loader');
         const genresShowMore = $('#genres-show-more');
         const genresItems = $('#genres-wrapper li');
@@ -31,6 +33,7 @@ $(document).ready(
             }
         );
 
+        /*===== SIDEBAR =====*/
         const openSidebar = $('#sidebar-open');
         const closeSidebar = $('#sidebar-close');
         const sidebar = $('#sidebar-wrapper');
