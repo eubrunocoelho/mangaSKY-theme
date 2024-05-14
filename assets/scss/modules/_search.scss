@@ -13,6 +13,10 @@
     transition: height .2s;
     width: 100%;
 
+    &.visible {
+        height: 90px !important;
+    }
+
     &__form {
         max-width: 940px;
         position: relative;
@@ -48,10 +52,6 @@
         right: 0;
         width: 50px;
     }
-}
-
-.search.visible {
-    height: 90px !important;
 }
 
 @media screen and (min-width: 480px) {
