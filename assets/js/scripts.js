@@ -1,12 +1,12 @@
 $(document).ready(
     () => {
         /*===== TOP SEARCH =====*/
-        const openSearch = $('#search-open');
+        const buttonSearch = $('#search-toggle');
         const search = $('#search-wrapper');
 
         search.height(0);
 
-        openSearch.click(
+        buttonSearch.click(
             () => {
                 search.toggleClass('visible');
             }
