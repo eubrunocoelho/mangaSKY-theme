@@ -7,10 +7,22 @@
 .genres {
     width: 100%;
 
+    &+button {
+        display: none;
+    }
+
     .wrapper {
         display: flex;
         justify-content: center;
         width: 100%;
+    }
+
+    &__wrapper {
+        margin: 0 0 0 0 !important;
+
+        li {
+            display: none;
+        }
     }
 
     &__list {
@@ -41,16 +53,4 @@
             }
         }
     }
-}
-
-#genres-wrapper {
-    margin: 0 0 0 0;
-
-    li {
-        display: none;
-    }
-}
-
-#genres-show-more {
-    display: none;
 }

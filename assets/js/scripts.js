@@ -1,52 +1,49 @@
 $(document).ready(
     () => {
-        /*===== TOP SEARCH =====*/
-        const buttonSearch = $('#search-toggle');
-        const search = $('#search-wrapper');
+        const search = $('#search');
+        const searchButton = $('#searchButton');
 
         search.height(0);
 
-        buttonSearch.click(
+        searchButton.click(
             () => {
                 search.toggleClass('visible');
             }
         );
 
-        /*===== GENRES LIST =====*/
-        const genresPreloader = $('#genres-pre-loader');
-        const genresShowMore = $('#genres-show-more');
-        const genresItems = $('#genres-wrapper li');
+        const genresPreloader = $('#genresPreloader');
+        const genresItems = $('.genres__wrapper li');
         const genresItemsLength = genresItems.length;
+        const genresButton = $('#genresButton');
 
         setTimeout(
             () => {
                 genresPreloader.hide();
                 genresItems.slice(0, 18).show();
-                genresShowMore.show();
+                genresButton.show();
             }, 1600
         );
 
-        genresShowMore.click(
+        genresButton.click(
             () => {
                 genresItems.slice(0, genresItemsLength).show();
-                genresShowMore.hide();
+                genresButton.hide();
             }
         );
 
-        /*===== SIDEBAR =====*/
-        const openSidebar = $('#sidebar-open');
-        const closeSidebar = $('#sidebar-close');
-        const sidebar = $('#sidebar-wrapper');
-        const windowOverlay = $('#window-overlay');
+        const windowOverlay = $('#windowOverlay');
+        const sidebar = $('#sidebar');
+        const sidebarOpen = $('#sidebarOpen');
+        const sidebarClose = $('#sidebarClose');
 
-        openSidebar.click(
+        sidebarOpen.click(
             () => {
                 windowOverlay.addClass('visible');
                 sidebar.addClass('visible');
             }
         );
 
-        closeSidebar.click(
+        sidebarClose.click(
             () => {
                 sidebar.removeClass('visible');
                 windowOverlay.removeClass('visible');
@@ -54,8 +51,8 @@ $(document).ready(
         )
 
         $(document).click(
-            (event) => {
-                if (windowOverlay.is(event.target)) {
+            (e) => {
+                if (windowOverlay.is(e.target)) {
                     sidebar.removeClass('visible');
                     windowOverlay.removeClass('visible');
                 }

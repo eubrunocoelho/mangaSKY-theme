@@ -1,4 +1,4 @@
-.pre-loader {
+.preloader {
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -10,6 +10,6 @@
 
 @keyframes looping {
     to {
-        transform: rotate(1turn)
+        transform: rotate(1turn);
     }
 }

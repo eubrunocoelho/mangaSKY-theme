@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="window-overlay" class="window-overlay closed">
-        <section id="sidebar-wrapper" class="sidebar">
+    <div id="windowOverlay" class="window-overlay closed">
+        <section id="sidebar" class="sidebar">
             <div class="sidebar__top">
                 <a href="./index.html" class="sidebar__logo">mangaSKY</a>
-                <button id="sidebar-close" class="sidebar__button button__close-box">
+                <button id="sidebarClose" class="sidebar__button button__close-box">
                     <span class="button__close-line"></span>
                     <span class="button__close-line"></span>
                 </button>
@@ -35,8 +35,8 @@
             </nav>
         </section>
     </div>
-    <section id="search-wrapper" class="search">
-        <form class="search__form">
+    <section id="search" class="search">
+        <form class="search__form" action="./search.html">
             <input type="text" class="search__input" placeholder="Pesquisar...">
             <button class="search__button">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -64,7 +64,7 @@
                     </ul>
                 </nav>
                 <div class="header__button-group">
-                    <button id="sidebar-open" class="header__button button__toggle-box">
+                    <button id="sidebarOpen" class="header__button button__toggle-box">
                         <span class="button__toggle-line"></span>
                         <span class="button__toggle-line"></span>
                         <span class="button__toggle-line"></span>
@@ -72,7 +72,7 @@
                     <span class="header__division-line">
                         <!-- -->
                     </span>
-                    <button id="search-toggle" class="header__button">
+                    <button id="searchButton" class="header__button">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </div>
@@ -92,18 +92,15 @@
         </nav>
         <section class="section content contact">
             <h1 class="content__title">Contato</h1>
-            <form class="contact__form">
+            <form id="contactForm" class="contact__form" action="./contact.html">
                 <div class="wrapper">
                     <div class="form__group">
                         <label for="name" class="form__label">Nome:</label>
-                        <input type="text" name="name" id="name" class="form__input" placeholder="Nome Completo">
+                        <input type="text" name="name" id="name" class="form__input" placeholder="Nome">
                     </div>
                     <div class="form__group">
                         <label for="email" class="form__label">E-mail:</label>
-                        <input type="text" name="email" id="email" class="form__input" placeholder="Endereço de E-mail" value="brunobcoelho@mangasky">
-                        <div class="alert alert--danger mt--12">
-                            O endereço de e-mail está inválido.
-                        </div>
+                        <input type="text" name="email" id="email" class="form__input" placeholder="Endereço de E-mail">
                     </div>
                     <div class="form__group">
                         <label for="subject" class="form__label">Assunto:</label>
@@ -161,11 +158,14 @@
                 </nav>
             </div>
             <div class="footer__copy">
-                <p><a href="#" class="copy__link">mangaSKY</a> © 2024 - Developed by: <a href="http://eubrunocoelho.vercel.app" target="_blank" class="copy__link copy__link--author">Bruno Coelho</p>
+                <p><a href="./index.html" class="copy__link">mangaSKY</a> © 2024 - Developed by: <a href="http://eubrunocoelho.vercel.app" target="_blank" class="copy__link copy__link--author">Bruno Coelho</p>
             </div>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/vendor/jquery.validate.min.js"></script>
+    <script src="./assets/js/vendor/additional-methods.min.js"></script>
     <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/validate.js"></script>
 </body>
 </html>

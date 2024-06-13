@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mangaSKY - Leitor de mangás online pt-BR</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="windowOverlay" class="window-overlay closed">
+        <section id="sidebar" class="sidebar">
+            <div class="sidebar__top">
+                <a href="./index.html" class="sidebar__logo">mangaSKY</a>
+                <button id="sidebarClose" class="sidebar__button button__close-box">
+                    <span class="button__close-line"></span>
+                    <span class="button__close-line"></span>
+                </button>
+            </div>
+            <nav class="sidebar__menu">
+                <ul class="sidebar__list">
+                    <li class="sidebar__list-item">
+                        <a href="./index.html" class="sidebar__list-link">Home</a>
+                    </li>
+                    <li class="sidebar__list-item">
+                        <a href="./mangas.html" class="sidebar__list-link">Mangás</a>
+                    </li>
+                    <li class="sidebar__list-item">
+                        <a href="./genres.html" class="sidebar__list-link active">Genêros</a>
+                    </li>
+                    <li class="sidebar__list-item">
+                        <a href="./contact.html" class="sidebar__list-link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+    <section id="search" class="search">
+        <form class="search__form" action="./search.html">
+            <input type="text" class="search__input" placeholder="Pesquisar...">
+            <button class="search__button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+    </section>
+    <header class="header">
+        <div class="container">
+            <a href="./index.html" class="header__logo">mangaSKY</a>
+            <div class="wrapper">
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a href="./index.html" class="header__list-link">Home</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="./mangas.html" class="header__list-link">Mangás</a>
+                        </li>
+                        <li class="header__list-item active">
+                            <a href="./genres.html" class="header__list-link active">Genêros</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="./contact.html" class="header__list-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__button-group">
+                    <button id="sidebarOpen" class="header__button button__toggle-box">
+                        <span class="button__toggle-line"></span>
+                        <span class="button__toggle-line"></span>
+                        <span class="button__toggle-line"></span>
+                    </button>
+                    <span class="header__division-line">
+                        <!-- -->
+                    </span>
+                    <button id="searchButton" class="header__button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <nav class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                    <a href="./index.html" class="breadcrumbs__list-link">Home</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <span class="breadcrumbs__list-link">Contato</span>
+                </li>
+            </ul>
+        </nav>
+        <section class="section content contact">
+            <h1 class="content__title">Gêneros</h1>
+            <nav class="genres">
+                <ul class="genres__list mb--0">
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">4Koma</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Ação</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Adulto</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Artes Marciais</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Aventura</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Bara</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Carros</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Comédia</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Demência</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Demônios</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Doujinshi</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Drama</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Ecchi</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Escolar</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Espacial</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Esportes</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Fantasia</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Fanzine</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Gastronomia</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Harém</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Hentai</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Histórico</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Horror</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Infatil</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Isekai</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Jogos</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Josei</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Magia</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Mechas</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Militar</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Mistério</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Música</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Paródia</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Psicológico</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Romance</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Samurai</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Sci-Fi</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Seinen</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Shoujo</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Shoujo Ai</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Shounen</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Shounen Ai</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Slice of Life</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Sobrenatural</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Super Poderes</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Suspense</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Tragédia</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Vampiros</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Yaoi</a>
+                    </li>
+                    <li class="genres__list-item">
+                        <a href="#" class="genres__list-link">Yuri</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <nav class="footer__socials">
+                    <ul class="socials__list">
+                        <li class="socials__list-item">
+                            <a href="#" class="socials__list-link socials--facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="socials__list-item">
+                            <a href="#" class="socials__list-link socials--twitter-x">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="socials__list-item">
+                            <a href="#" class="socials__list-link socials--discord">
+                                <i class="fa-brands fa-discord"></i>
+                            </a>
+                        </li>
+                        <li class="socials__list-item">
+                            <a href="./contact.html" class="socials__list-link socials--contact">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__copy">
+                <p><a href="./index.html" class="copy__link">mangaSKY</a> © 2024 - Developed by: <a href="http://eubrunocoelho.vercel.app" target="_blank" class="copy__link copy__link--author">Bruno Coelho</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

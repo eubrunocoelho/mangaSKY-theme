@@ -16,6 +16,28 @@ html {
     height: 100%;
 }
 
+::selection {
+    background: lighten($blue-color-1, 8%);
+    color: $white-color-1;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: $scroll-bar-track-color;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $scroll-bar-thumb-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darken($scroll-bar-thumb-color, 14%);
+}
+
 body {
     background: $white-color-4;
     display: flex;

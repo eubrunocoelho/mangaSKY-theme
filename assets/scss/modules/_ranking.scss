@@ -50,7 +50,12 @@
     &__img {
         border-radius: $border-radius-7;
         height: 100%;
+        transition: .04s ease-in-out;
         width: 100%;
+
+        &:hover {
+            opacity: .88;
+        }
     }
 
     &__info {
