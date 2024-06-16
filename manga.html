@@ -289,8 +289,8 @@
         </section>
         <section class="section content mb--0">
             <h1 class="content__title">Comentários</h1>
-            <div class="comments">
-                <span>Comentários</span>
+            <div id="disqus_thread" class="comments">
+                <!-- -->
             </div>
         </section>
     </main>
@@ -328,6 +328,13 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/scripts.js"></script><script>
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://https-mangasky-com-br.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
 </body>
 </html>
